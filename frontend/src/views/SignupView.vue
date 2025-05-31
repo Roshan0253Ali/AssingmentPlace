@@ -25,7 +25,7 @@ export default {
   methods: {
     async signup() {
       try {
-        await axios.post('http://localhost:5000/api/auth/signup', {
+        await axios.post('https://assingmentplace.onrender.com/api/auth/signup', {
           email: this.email,
           password: this.password
         });

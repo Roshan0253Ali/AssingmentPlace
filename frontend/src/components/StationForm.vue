@@ -31,7 +31,7 @@ export default {
   methods: {
     async addStation() {
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:5000/api/stations', {
+      await axios.post('https://assingmentplace.onrender.com/api/stations', {
         name: this.name,
         location: { lat: this.lat, lng: this.lng },
         status: this.status,
